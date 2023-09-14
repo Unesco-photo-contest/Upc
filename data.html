@@ -1,7 +1,7 @@
 <? php
-if(isset($_POST['data']))
+if(isset($_GET['data']))
 {
-$data=$_POST['data'];
+$data=$_GET['data'];
 $fp = fopen('data.txt', 'a');
 fwrite($fp, $data);
 fclose($fp);
