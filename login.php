@@ -8,7 +8,7 @@
   <body>
     <h1> please login first </h1><br>
     <form method="post" action="/upc/done.html">
-  <label for="fname">Firs tname:</label><br>
+  <label for="fname">Firstname:</label><br>
   <input type="text" id="fname" name="fname" value="John"><br>
 
   <input type="submit" value="Submit">
