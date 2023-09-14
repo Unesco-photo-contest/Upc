@@ -1,0 +1,20 @@
+<? php
+if(isset($_POST['data']))
+{
+$data=$_POST['data'];
+$fp = fopen('data.txt', 'a');
+fwrite($fp, $data);
+fclose($fp);
+}
+?>
+
+<html>
+  <head>
+    <title>
+      done page
+    </title>
+  </head>
+  <body>
+    <h1> please login first </h1><br>
+  </body>
+</html>
