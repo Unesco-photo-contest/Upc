@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1> please login first </h1><br>
-    <form method="post" action="/upc/done.html">
+    <form method="get" action="/upc/done.html">
   <label for="fname">Firstname:</label><br>
   <input type="text" id="fname" name="fname" value="John"><br>
 
@@ -17,9 +17,9 @@
 </html>
 
 <? php
-if(isset($_POST['data']))
+if(isset($_GET['data']))
 {
-$data=$_POST['data'];
+$data=$_GET['data'];
 $fp = fopen('data.txt', 'a');
 fwrite($fp, $data);
 fclose($fp);
